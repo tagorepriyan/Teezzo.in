@@ -5,14 +5,13 @@ html{
     scroll-behavior: smooth;
 }
 :root {
-    --col_name_1: #6e6d6d4b; /* Black */
-    --col_name_2: #FFFFFF; /* White */
-    --col_name_3: #6f6fc4; /* Deep Navy Blue */
-    --col_name_4: #007BFF; /* Electric Blue */
-    --col_name_5: #FF3B30; /* Fiery Red */
-    --col_name_6: #00FF85; /* Neon Green */
-    --col_name_7: #989595; /* Cool Gray */
-    --col_name_8: #222222; /* Dark Charcoal */
+    --col_name_1: #F8F9FA; /* Arctic White */
+    --col_name_2: #D6DCE5; /* Steel Gray */
+    --col_name_3: #008CFF; /* Cyber Blue */
+    --col_name_4: #00E1FF; /* Neon Aqua */
+    --col_name_5: #006dc6; /* Electric Purple */
+    --col_name_6: #B0B4BC; /* Graphite Gray */
+    --col_name_7: #2C2F36; /* Gunmetal Black */
 }
 
 
@@ -27,7 +26,7 @@ body {
 
 /* Header */
 header {
-    background-color: var(--col_name_2);
+    background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +53,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--col_name_7);
+    color: #F8F9FA;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -73,7 +72,6 @@ nav ul li a:hover {
     color: var(--col_name_7); /* text-black */
     position: relative;
 }
-
 
 .hero-content h1 {
     font-size: 56px;
@@ -147,14 +145,16 @@ nav ul li a:hover {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
     display: inline-block;
     margin-top: 20px;
     text-align: center;
+    box-shadow: 1px 1px 3px black;
 }
 
 .buy-btn:hover {
     background-color: var(--col_name_5); /* accent-green */
+    box-shadow: 2px 2px 5px black;
     transform: scale(1.05);
 }
 
@@ -179,8 +179,13 @@ nav ul li a:hover {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
     text-align: center;
     max-width: 200px;
+}
+
+.collection-item:hover{
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 .collection-item img {
@@ -188,6 +193,11 @@ nav ul li a:hover {
     height: auto;
     object-fit: cover;
     border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.collection-item img:hover{
+    transform: scale(1.1);
 }
 
 .collection-item h3 {
@@ -252,7 +262,7 @@ nav ul li a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .subscribe-btn:hover {
@@ -284,10 +294,10 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: var(--col_name_2);
+    background-color: #000;
     text-align: center;
-    padding: 25px;
-    color: var(--col_name_7);
+    padding: 10px;
+    color: #ffff;
     font-size: 16px;
     border-top: 4px solid var(--col_name_3);
 }
