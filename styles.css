@@ -22,6 +22,8 @@ body {
     color: var(--col_name_7);
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -94,7 +96,7 @@ nav ul li a:hover {
     font-weight: bold;
     text-decoration: none;
     border-radius: 8px;
-    transition: background 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s;
     display: inline-block;
     margin-top: 90px;
 }
