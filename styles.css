@@ -283,7 +283,7 @@ nav ul li a:hover {
     border: none;
     cursor: pointer;
     display: none; /* Hidden by default, shown via JS */
-    transition: background 0.3s, transform 0.2s;
+    transition: background-c 0.3s, transform 0.2s;
 }
 
 .scroll-to-top:hover {
