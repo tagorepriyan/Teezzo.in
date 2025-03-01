@@ -1,0 +1,293 @@
+/* Importing Baloo 2 Font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --col_name_1: #6e6d6d4b; /* Black */
+    --col_name_2: #FFFFFF; /* White */
+    --col_name_3: #6f6fc4; /* Deep Navy Blue */
+    --col_name_4: #007BFF; /* Electric Blue */
+    --col_name_5: #FF3B30; /* Fiery Red */
+    --col_name_6: #00FF85; /* Neon Green */
+    --col_name_7: #989595; /* Cool Gray */
+    --col_name_8: #222222; /* Dark Charcoal */
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: var(--col_name_1);
+    color: var(--col_name_7);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--col_name_2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 4px solid var(--col_name_3);
+}
+
+.logo {
+    font-size: 28px;
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--col_name_3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--col_name_7);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--col_name_5);
+}
+
+/* Hero Section */
+.hero {
+    background: url('banner-1.png') center/cover no-repeat, linear-gradient(to right, var(--col_name_1), var(--col_name_2)); /* Add your image path */
+    text-align: center;
+    padding: 120px 20px;
+    color: var(--col_name_7); /* text-black */
+    position: relative;
+}
+
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    background-color: var(--col_name_3);
+    color: var(--col_name_1);
+    padding: 14px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+    margin-top: 90px;
+}
+
+.cta-button:hover {
+    background-color: var(--col_name_5);
+    transform: scale(1.05);
+}
+
+/* Trending Products */
+.trending {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--col_name_2);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product {
+    background-color: var(--col_name_1);
+    padding: 20px;
+    border: 2px solid var(--col_name_6);
+    border-radius: 10px;
+}
+
+.product img {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.buy-btn {
+    background-color: var(--col_name_3); /* accent-red */
+    color: var(--col_name_1); /* base-white */
+    padding: 14px 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buy-btn:hover {
+    background-color: var(--col_name_5); /* accent-green */
+    transform: scale(1.05);
+}
+
+
+
+#featured-collections {
+    padding: 50px 20px;
+    background-color: var(--col_name_1); /* base-white */
+    text-align: center;
+}
+
+.collection-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.collection-item {
+    background-color: var(--col_name_2); /* base-gray */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.collection-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--col_name_7); /* text-black */
+}
+
+#customer-reviews {
+    padding: 50px 20px;
+    background-color: var(--col_name_2); /* base-gray */
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.review-item {
+    background-color: var(--col_name_1); /* base-white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+}
+
+.review-item p {
+    font-size: 16px;
+    color: var(--col_name_7); /* text-black */
+    font-style: italic;
+}
+
+.review-item h4 {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--col_name_3); /* accent-red */
+}
+
+#community {
+    padding: 50px 20px;
+    background-color: var(--col_name_1); /* base-white */
+    text-align: center;
+}
+
+#community p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--col_name_7); /* text-black */
+}
+
+.subscribe-btn {
+    background-color: var(--col_name_3); /* accent-red */
+    color: var(--col_name_1); /* base-white */
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--col_name_5); /* accent-green */
+    transform: scale(1.05);
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--col_name_3); /* accent-red */
+    color: var(--col_name_1); /* base-white */
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown via JS */
+    transition: background 0.3s, transform 0.2s;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--col_name_5); /* accent-green */
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--col_name_2);
+    text-align: center;
+    padding: 25px;
+    color: var(--col_name_7);
+    font-size: 16px;
+    border-top: 4px solid var(--col_name_3);
+}
